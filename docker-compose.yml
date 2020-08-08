@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  web:
+    build: .
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/home/node/neutrino
+    working_dir: /home/node/neutrino/website
+    user: node
+    command:
+      - npm
+      - run
+      - dev

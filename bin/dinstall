@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+
+echo '-----------'
+echo 'npm install'
+docker-compose run --rm web npm install

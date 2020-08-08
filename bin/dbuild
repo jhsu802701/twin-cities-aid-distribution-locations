@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+
+echo '--------------'
+echo 'snowpack build'
+docker-compose run --rm web snowpack build
